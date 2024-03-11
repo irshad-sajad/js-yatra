@@ -21,5 +21,6 @@
 // console.log(undefined < 0); //false
 
 
-// strict equality(===) => checks both value & dataType
+//strict equality(===) => checks both value & dataType
+//if both are equal = true, otherwise = false
 console.log("2" === 2); //false
