@@ -8,6 +8,7 @@
 const mySym = Symbol("key1");
 
 // declaration
+
 const user = {
     name: "Irshad",
     "full name": "Irshad Sajad",
@@ -20,13 +21,16 @@ const user = {
 };
 
 // access objects
+
 // console.log(user.email); // not preferred
 // console.log(user["email"]); // preferred way
 // console.log(user["full name"]);
 // console.log(user[mySym]); // important from interview perspective
 
+
 // manipulate objects
 user.email = "irshad@gmail.com";
+
 
 // freeze the object 
 // Object.freeze(user); // object user cannot be changed now.
@@ -34,6 +38,7 @@ user.email = "irshad@gmail.com";
 // as object is freezed, object cannot be manipulated.
 user.email = "irshad@google.com";
 // console.log(user);
+
 
 
 // function will be treated as variables.
