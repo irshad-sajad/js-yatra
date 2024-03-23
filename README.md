@@ -3,8 +3,11 @@ A code repo for javascript series from youtube
 
 
 There are three types of execution contexts in JavaScript:
+
 Global execution context: This is the default execution context that is created when the code is executed in a global scope.
+
 Function execution context: This is the execution context that is created when a function is called.
+
 Eval execution context: This is the execution context that is created when the eval() function is called
 
 The working of the JavaScript works on three phases:
