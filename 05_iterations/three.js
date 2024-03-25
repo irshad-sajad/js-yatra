@@ -26,6 +26,7 @@ for (const greet of greetings) {
 
 
 // maps
+// contains unique values
 
 // example
 
