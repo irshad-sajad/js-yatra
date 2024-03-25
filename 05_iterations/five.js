@@ -1,5 +1,7 @@
 // for each
 
+// callback function (fn with no name) is passed to for each
+
 // example
 
 const coding = ["js","rb","py","java","cpp"];
