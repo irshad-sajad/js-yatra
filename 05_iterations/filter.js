@@ -9,7 +9,7 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 
 const values = coding.forEach( (item) => {
     //console.log(item);
-    return item; // cannot return in for each
+    return item; // for each does not return any value 
 } )
 
 console.log(values); // undefined
