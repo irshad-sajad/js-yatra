@@ -32,6 +32,7 @@ map.set('IN', "India");
 map.set('USA', "United States of America");
 map.set('Fr', "France");
 
+// will not run, as map is not iterable
 for (const key in map) {
-    console.log(key); // will not run
+    console.log(key); 
 }
