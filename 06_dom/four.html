@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    // edit and remove elements in DOM
+
+    // basic approach (not preferred)
+
+    function addlanguage(langName) {
+        const li = document.createElement('li');
+
+        // not preferred (as it's not optimized), instead use append child
+        li.innerHTML = `${langName}`; 
+        document.querySelector('.language').appendChild(li);
+    }
+
+    addlanguage("python");
+    addlanguage("typescript");
+
+    // number of times this method runs, the whole dom tree is traversed.
+
+
+    /********************************************************************** */
+
+    // optimized approach (recommended)
+
+    function addOptilanguage(langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+
+        document.querySelector('.language').appendChild(li);
+    }
+
+    addOptilanguage('golang');
+
+    // here we don't need to traverse the whole dom tree
+
+
+    /********************************************************************** */
+
+    // edit
+
+    // example 
+
+    const secondLang = document.querySelector('li:nth-child(2)');
+    // secondLang.innerHTML = "mojo"; // try to avoid
+
+    const newli = document.createElement('li');
+    newli.textContent = "mojo";
+    secondLang.replaceWith(newli);
+
+
+    // example
+
+    const firstLang = document.querySelector('li:first-child');
+    firstLang.outerHTML = '<li>TypeScript</li>';
+
+
+    
+    // remove
+
+    const lastLang = document.querySelector('li:last-child');
+    lastLang.remove();
+</script>
+</html>
