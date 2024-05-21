@@ -15,7 +15,7 @@ let state; //undefined
 // string => "sequence/assembly of characters"
 // boolean => true or false
 // null => standalone value (type = object)
-// undefined => place holder for a value which is not defined yet (type = undefined)
+// undefined => placeholder for a value which is not defined yet (type = undefined)
 // symbol => introduced by ES6 for unique identifiers
 
 
